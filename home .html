@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easitronics | Project Hub</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-card:hover { transform: translateY(-8px); transition: all 0.3s ease; }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); color: white; }
+        .whatsapp-text { font-size: 14px; margin-left: 10px; font-weight: bold; }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50 border-b-4 border-blue-600">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="https://easitronics.netlify.app/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2">
+                <img src="images/logo.png" alt="EASITRONICS logo" class="h-8 sm:h-10 w-auto">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-black text-yellow-500 tracking-tight">EASITRONICS</h1>
+                    <p class="text-xs text-gray-500 -mt-1">make your projects & products easiger </p>
+                </div>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-gray-700 font-semibold items-center">
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="https://wa.me/917989604815?text=hi%20charan%20i%20need%20project" target="_blank" class="bg-green-500 text-white px-5 py-2 rounded-full hover:bg-green-600 transition flex items-center">
+                    <i class="fab fa-whatsapp mr-2"></i> Chat with Us
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Offers banner -->
+    <div class="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-gray-900 py-3 shadow-md animate-[fade_1s_ease-in]">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+                <div class="px-3 py-1 bg-white rounded-full text-yellow-600 font-extrabold animate-pulse shadow">OFFER</div>
+                <div class="leading-tight">
+                    <div class="font-semibold">First 20 projects: 5% cashback • Earn 5% on referrals</div>
+                    <div class="text-sm text-yellow-900/90"></div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/917989604815?text=hi%20charan%20i%20need%20project" target="_blank" rel="noopener noreferrer" class="bg-white text-yellow-600 px-4 py-2 rounded-lg font-bold hover:scale-105 transform transition shadow-lg animate-bounce">Claim Offer</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/917989604815?text=hi%20charan%20i%20need%20project" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Contact Easitronics</span>
+    </a>
+
+    <section id="about" class="py-8 sm:py-16 bg-gradient-to-r from-blue-700 to-blue-900 text-white min-h-[60vh] lg:min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-4 italic">Big Projects. Small Budget. Customized Projects at low cost</h2>
+            <p class="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto">
+                Welcome to <strong>Easitronics</strong> — Project Solutions for Every Student. • Engineering • Medical • Diploma
+            </p>
+            <div class="mt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+                <span class="bg-white/20 text-white px-4 py-2 rounded-full font-semibold">Projects starting from ₹4,999</span>
+                <span class="bg-white/10 text-white px-4 py-2 rounded-full">3D design & printing available • Documentation support</span>
+            </div>
+        </div>
+    </section>
+
+    <main id="projects" class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10 border-l-8 border-blue-600 pl-4">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="h-40 sm:h-48 md:h-56 lg:h-48 bg-gray-200 overflow-hidden">
+                    <img src="images/arm.png" alt="Robotic arm project" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Robotic Arm Prototype</h3>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Articulated robotic arm with servo control for precision pick-and-place tasks.</p>
+                    <div class="mt-4 flex items-center text-blue-600 font-bold text-xs uppercase">
+                        <span>Read Case Study →</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="h-40 sm:h-48 md:h-56 lg:h-48 bg-gray-200 overflow-hidden">
+                    <img src="images/arm2.png" alt="Advanced robotic arm" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Advanced Robotic Arm (v2)</h3>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Upgraded kinematics and grip sensing for more robust manipulation and automation.</p>
+                    <div class="mt-4 flex items-center text-blue-600 font-bold text-xs uppercase">
+                        <span>Read Case Study →</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="h-40 sm:h-48 md:h-56 lg:h-48 bg-gray-200 overflow-hidden">
+                    <img src="images/chess.png" alt="Chess robot project" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Chess AI Robot</h3>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Autonomous chess-playing robot combining computer vision and move-planning algorithms.</p>
+                    <div class="mt-4 flex items-center text-blue-600 font-bold text-xs uppercase">
+                        <span>Read Case Study →</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="h-40 sm:h-48 md:h-56 lg:h-48 bg-gray-200 overflow-hidden">
+                    <img src="images/drone.jpeg" alt="Drone project" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Autonomous Drone</h3>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Quadcopter with stabilization, waypoint navigation and object detection capabilities.</p>
+                    <div class="mt-4 flex items-center text-blue-600 font-bold text-xs uppercase">
+                        <span>Read Case Study →</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="h-40 sm:h-48 md:h-56 lg:h-48 bg-gray-200 overflow-hidden">
+                    <img src="images/rover.png" alt="Rover project" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Autonomous Rover</h3>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Ground rover platform with obstacle avoidance and remote telemetry.</p>
+                    <div class="mt-4 flex items-center text-blue-600 font-bold text-xs uppercase">
+                        <span>Read Case Study →</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="h-40 sm:h-48 md:h-56 lg:h-48 bg-gray-200 overflow-hidden">
+                    <img src="images/friderice.png" alt="Fridge rice project" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Automated Fridge & Rice Cooker</h3>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Smart appliance control system for temperature and cooking automation.</p>
+                    <div class="mt-4 flex items-center text-blue-600 font-bold text-xs uppercase">
+                        <span>Read Case Study →</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="h-40 sm:h-48 md:h-56 lg:h-48 bg-gray-200 overflow-hidden">
+                    <img src="images/table_tennes.png" alt="Table tennis robot" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Table Tennis Trainer</h3>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Ball-tracking and return mechanism to help improve player reflexes and accuracy.</p>
+                    <div class="mt-4 flex items-center text-blue-600 font-bold text-xs uppercase">
+                        <span>Read Case Study →</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="h-40 sm:h-48 md:h-56 lg:h-48 bg-gray-200 overflow-hidden">
+                    <img src="images/cock.png" alt="Cock project" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Smart Poultry Monitor</h3>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Environmental sensors and automated feeding system for small-scale poultry farms.</p>
+                    <div class="mt-4 flex items-center text-blue-600 font-bold text-xs uppercase">
+                        <span>Read Case Study →</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-10">
+            
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <img src="images/logo.png" alt="EASITRONICS logo" class="h-10 w-auto">
+                    <div class="flex flex-col items-start">
+                        <h2 class="text-2xl font-black text-yellow-400 tracking-tighter">EASITRONICS</h2>
+                        <p class="text-yellow-200 text-xs -mt-1">Big Projects. Small Budget.</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-300">
+                    Customized project solutions for students and innovators. From 3D design to AI implementation, we bring your concepts to life.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="text-white font-bold uppercase text-sm tracking-widest">Get in Touch</h3>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt text-blue-500 mr-3"></i> 
+                        <a href="tel:+917989604815" class="hover:text-white transition">+91 7989604815</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope text-blue-500 mr-3"></i> 
+                        <a href="mailto:charancherry1130@gmail.com" class="hover:text-white transition">charancherry1130@gmail.com</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-blue-500 mr-3"></i> 
+                        <span>India</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="text-white font-bold uppercase text-sm tracking-widest">Follow Our Work</h3>
+                <div class="flex space-x-4">
+                    <a href="https://wa.me/917989604815" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-500 hover:text-white transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <p class="text-xs text-gray-500 italic mt-2">Projects starting at ₹4,999/-</p>
+            </div>
+
+        </div>
+
+        <div class="pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            <p>© 2026 Vasamsetti Charan Teja | <strong>EASITRONICS</strong> | DEV 646. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
